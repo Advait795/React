@@ -34,7 +34,7 @@ const dropdownLinks = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ handlePopup }) => {
   return (
     <div className="bg-white shadow-md">
       <div className="container flex justify-between py-4 sm:py-3">
@@ -83,14 +83,12 @@ const Navbar = () => {
             </li>
             {/* Login Button */}
             <li>
-              <button>
-                <a
-                  href="/#"
-                  className="flex justify-center items-center gap-2 flex-wrap bg-secondary h-[40px] px-5 py-2 text-xl font-semibold text-white hover:scale-105 duration-300"
-                >
-                  <FaUser />
-                  My Account
-                </a>
+              <button
+                onClick={handlePopup}
+                className="flex justify-center items-center gap-2 flex-wrap bg-secondary h-[40px] px-5 py-2 text-xl font-semibold text-white hover:scale-105 duration-300"
+              >
+                <FaUser />
+                My Account
               </button>
             </li>
           </ul>

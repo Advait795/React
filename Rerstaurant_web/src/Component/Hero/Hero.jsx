@@ -7,7 +7,7 @@ const BgStyle = {
   backgroundImage: `url(${HeroBg})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
-  backgroundSize: "COVER",
+  backgroundSize: "cover",
   height: "100%",
   width: "100%",
 };

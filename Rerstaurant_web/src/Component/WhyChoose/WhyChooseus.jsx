@@ -14,7 +14,7 @@ const WhyChooseus = () => {
         <div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-14 sm:gap-4">
             {/* 1st Card */}
-            <div className="text-center flex justify-center items-center flex-col gap-1 px-2">
+            <div className="text-center flex justify-center items-center flex-col gap-2 px-2">
               <p className="text-dark/70 font-semibold">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
@@ -22,6 +22,36 @@ const WhyChooseus = () => {
                 .....
               </p>
               <FaBus className="text-5xl text-primary" />
+            </div>
+            {/* 2nd card */}
+            <div className="text-center flex justify-center items-center flex-col gap-2 px-2">
+              <FaBus className="text-5xl text-secondary" />
+              <p className="text-5xl rotate-90 text-decondary text-center translate-x-5">
+                .....
+              </p>
+              <p className="text-dark/70 font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            {/* 3rd Card */}
+            <div className="text-center flex justify-center items-center flex-col gap-2 px-2">
+              <p className="text-dark/70 font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <p className="text-5xl rotate-90 text-primary text-center translate-x-5">
+                .....
+              </p>
+              <FaBus className="text-5xl text-primary" />
+            </div>
+            {/* 4th card */}
+            <div className="text-center flex justify-center items-center flex-col gap-2 px-2">
+              <FaBus className="text-5xl text-secondary" />
+              <p className="text-5xl rotate-90 text-decondary text-center translate-x-5">
+                .....
+              </p>
+              <p className="text-dark/70 font-semibold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
             </div>
           </div>
         </div>
