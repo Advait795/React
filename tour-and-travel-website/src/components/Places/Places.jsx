@@ -64,7 +64,7 @@ const PlacesData = [
   },
 ];
 
-const Places = () => {
+const Places = ({ handleOrderPopup }) => {
   return (
     <div className="bg-gray-50 py-10 ">
       <div className="container">
@@ -73,7 +73,11 @@ const Places = () => {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {PlacesData.map((data, index) => (
-            <PlacesCard key={index} data={data} />
+            <PlacesCard
+              key={index}
+              data={data}
+              handleOrderPopup={handleOrderPopup}
+            />
           ))}
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import mainVid from "../assets/video/main.mp4";
 import Hero from "../components/Hero/Hero";
 import Places from "../components/Places/Places";
@@ -8,8 +8,14 @@ import Blogs from "../pages/Blogs";
 import Banner from "../components/Banner/Banner";
 import Banner2 from "../assets/travel-cover2.jpg";
 import Testimonial from "../components/Testimonial/Testimonial";
+import Popup from "../components/Popup/Popup";
 
 const Home = () => {
+  const [orderPopup, setOrderPopup] = useState(false);
+
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup);
+  };
   return (
     <>
       <div>
@@ -24,12 +30,13 @@ const Home = () => {
           </video>
           <Hero />
         </div>
-        <Places />
+        <Places handleOrderPopup={handleOrderPopup} />
         <BannerImg img={Poster} />
         <Blogs />
         <Banner />
         <BannerImg img={Banner2} />
         <Testimonial />
+        <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
       </div>
     </>
   );
